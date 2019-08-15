@@ -3,12 +3,11 @@
 // Ask the user to enter a word. Keep asking them to enter a word until they enter the letter 'q'.
 
 let user = [""];
-
-while (user !== "q")
-{
-    var wordC= prompt("Enter a word. Press 'q' to quit.");
-    wordC.forEach(function (print)
-    {
+// your while loop condition should reference the user input
+while (user !== "q") {
+    var wordC = prompt("Enter a word. Press 'q' to quit.");
+	// you cannot call forEach on a string, only on an array 
+    wordC.forEach(function (print){
         console.log(print)
     });
 }
@@ -21,6 +20,7 @@ while (user !== "q")
 
 
 var string =  [""];
+// don't put strings in an empty array
  string.map(function (element)
  {
 var toLowerCase = toLowerCase;
